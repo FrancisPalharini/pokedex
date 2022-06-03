@@ -19,7 +19,7 @@ fetch('https://pokeapi.co/api/v2/pokemon?limit=150')
 
             if(type.types.length == 2){
             box.querySelector('#pokemon-type').innerHTML = type.types[0].type.name
-            box.querySelector('#pokemon-type2').innerHTML = type.types[1].type.name
+            box.querySelector('#pokemon-type').innerHTML += type.types[1].type.name
             } else {
                 box.querySelector('#pokemon-type').innerHTML = type.types[0].type.name
 
